@@ -5,6 +5,15 @@ function esEntero(num) {
   // Ejemplo: (-10) ---> true
   // De lo contrario, retorna false.
   // Tu código:
+  var numStr=num.toString();
+
+  for (var i=0; i<numStr.length;i++){
+    if (numStr[i]==="."){
+      return false;
+    }
+  }
+  return true;
+
 }
 
 module.exports = esEntero;
